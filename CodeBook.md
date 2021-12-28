@@ -1,5 +1,4 @@
-Feature Selection 
-=================
+Source Data Features CodeBook:
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -56,4 +55,36 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-The complete list of variables of each feature vector is available in 'features.txt'
+The complete list of variables of each feature vector is available in 'features.txt
+
+
+run.analyis.R Cleaning
+
+1. Merges the training and the test sets to create one data set.
+
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+    - cleaned data has only the columns containing "Mean" or "std" for each activity and subject from the merged data of the training and test sets.
+
+3. Uses descriptive activity names to name the activities in the data set
+  
+
+4. Appropriately labels the data set with descriptive variable names. 
+  - I used gsub to substitute the abbreviations for the full name:
+  "Acc" to  "Accelerometer"
+ "Gyro" to "Gyroscope"
+ "Mag" to "Magnitude"
+ "Freq" to "Frequency"
+ "BodyBody" to "Body"
+ "^t" to "Time"
+ "^f" to "Frequency"
+ "tBody" to "TimeBody",
+ "fBody" to "FrequencyBody"
+ 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+    I created unique column names to remove duplicate names and used tidyverse to get a summary table (Tidy_Datset.txt) with the average of each variable for each subject and  activity.
+ 
+
+ 
+ 
+
+
