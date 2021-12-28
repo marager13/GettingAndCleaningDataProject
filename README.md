@@ -1,5 +1,5 @@
 # GettingAndCleaningDataProject
-This repo contains my submissions for the Getting and Cleaning Data Course week 4 peer graded assignment submission.
+This repo contains my submission for the Getting and Cleaning Data Course week 4 peer graded assignment.
 
 The original data set can be found at: Human Activity Recognition Using Smartphones Data Set (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
