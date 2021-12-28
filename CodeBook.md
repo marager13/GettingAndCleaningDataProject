@@ -68,8 +68,7 @@ run.analyis.R Cleaning
 3. Uses descriptive activity names to name the activities in the data set
   
 
-4. Appropriately labels the data set with descriptive variable names. 
-  - I used gsub to substitute the abbreviations for the full name:
+4. Appropriately labels the data set with descriptive variable names.  I used gsub to substitute the abbreviations for the full name:
   "Acc" to  "Accelerometer"
  "Gyro" to "Gyroscope"
  "Mag" to "Magnitude"
