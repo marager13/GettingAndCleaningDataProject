@@ -65,10 +65,9 @@ run.analyis.R Cleaning
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
     - cleaned data has only the columns containing "Mean" or "std" for each activity and subject from the merged data of the training and test sets.
 
-3. Uses descriptive activity names to name the activities in the data set
-  
+3. Uses descriptive activity names to name the activities in the data set. Replaced the values in the activity_labels column with the corresponding activiy labels.
 
-4. Appropriately labels the data set with descriptive variable names.  I used gsub to substitute the abbreviations for the full name:
+4. Appropriately labels the data set with descriptive variable names. Used gsub to substitute the abbreviations for the full name:
   "Acc" to  "Accelerometer"
  "Gyro" to "Gyroscope"
  "Mag" to "Magnitude"
@@ -79,8 +78,7 @@ run.analyis.R Cleaning
  "tBody" to "TimeBody",
  "fBody" to "FrequencyBody"
  
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-    I created unique column names to remove duplicate names and used tidyverse to get a summary table (Tidy_Datset.txt) with the average of each variable for each subject and  activity.
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. created unique column names to remove duplicate names and used tidyverse to get a summary table (Tidy_Datset.txt) with the average of each variable for each subject and  activity.
  
 
  
