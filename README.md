@@ -8,4 +8,4 @@ CodeBook.md - contains a code book that modifies and updates the available codeb
 
 run_analysis.R - R script downloads, loads, and cleans the original data set; outputs file of cleaned and summarized data to a .txt file called Tidy_Dataset.txt
 
-Tidy_DataSet.txt - Final Tidy Dataset 
+Tidy_DataSet.txt - Final cleaned Dataset exported as a txt file
